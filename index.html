@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   
+
+    <script src="app2.js" defer ></script>
+
+
+
+</head>
+
+<body class="dark-theme">
+
+
+  <div class="container">
+    <header>
+
+      <h1 class="title">TODO</h1>
+      <button class="switch"><img src="images/icon-sun.svg" alt="switch-theme"></button>
+
+    </header>
+    <main>
+
+      <form class="form">
+        <input type="radio" name="checkBox" class="checkBox first" disabled>
+        <input type="text" name="newTodo" class="newTodo" placeholder="Create a new todo...">
+        <button type="submit">
+          <i class="fa-solid fa-plus btn "></i>
+        </button>
+        
+        
+      </form>
+
+      <ul class="todoList">
+
+      </ul>
+      <ul>
+
+        <li class="todoItem">
+          <span class="count">0 items left</span>
+          <div class="btnsWrapper">
+            <button class="statusBtn selected" id="all">All</button>
+            <button class="statusBtn" id="active">Active</button>
+            <button class=" statusBtn" id="completed">Completed</button>
+          </div>
+          <button class="clear " id="clear">Clear Completed</button>
+        </li>
+      </ul>
+    </main>
+
+
+
+  </div>
+
+  <!-- Todo
+
+ items left
+
+  All
+  Active
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list -->
+
+
+  
+</body>
+
+</html>
